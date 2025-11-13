@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Home Energy Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <i class="fas fa-home"></i>
+            <h1>Smart Home Energy Optimization Dashboard</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="devices.html"><i class="fas fa-plug"></i> Devices</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="energy-graph" class="card">
+            <div class="section-header">
+                <i class="fas fa-chart-line"></i>
+                <h2>Real-Time Energy Consumption</h2>
+            </div>
+            <canvas id="energyChart"></canvas>
+        </section>
+        <section id="device-status" class="card">
+            <div class="section-header">
+                <i class="fas fa-plug"></i>
+                <h2>Device Status</h2>
+            </div>
+            <table id="deviceTable">
+                <thead>
+                    <tr>
+                        <th>Device</th>
+                        <th>Room</th>
+                        <th>Status</th>
+                        <th>Power Usage (kWh)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Devices will be populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="notifications" class="card">
+            <div class="section-header">
+                <i class="fas fa-bell"></i>
+                <h2>Notifications</h2>
+            </div>
+            <ul id="notificationList">
+                <!-- Notifications will be populated here -->
+            </ul>
+        </section>
+        <section id="suggestions" class="card">
+            <div class="section-header">
+                <i class="fas fa-lightbulb"></i>
+                <h2>Suggestions</h2>
+            </div>
+            <div id="suggestionBox">
+                <!-- Suggestions will be populated here -->
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

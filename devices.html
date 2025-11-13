@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devices - Smart Home Energy Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <i class="fas fa-home"></i>
+            <h1>Smart Home Energy Optimization</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="devices.html"><i class="fas fa-plug"></i> Devices</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header">
+            <h2>Device Management</h2>
+            <p>Control and monitor all your smart home devices</p>
+        </section>
+
+        <section class="devices-grid">
+            <div class="device-card">
+                <div class="device-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Living Room Light</h3>
+                <p>Status: <span class="status on">On</span></p>
+                <p>Usage: 0.5 kWh</p>
+                <button class="toggle-btn">Turn Off</button>
+            </div>
+            <div class="device-card">
+                <div class="device-icon">
+                    <i class="fas fa-snowflake"></i>
+                </div>
+                <h3>Bedroom AC</h3>
+                <p>Status: <span class="status on">On</span></p>
+                <p>Usage: 2.1 kWh</p>
+                <button class="toggle-btn">Turn Off</button>
+            </div>
+            <div class="device-card">
+                <div class="device-icon">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <h3>Kitchen Fan</h3>
+                <p>Status: <span class="status off">Off</span></p>
+                <p>Usage: 0.0 kWh</p>
+                <button class="toggle-btn off">Turn On</button>
+            </div>
+            <div class="device-card">
+                <div class="device-icon">
+                    <i class="fas fa-tv"></i>
+                </div>
+                <h3>TV</h3>
+                <p>Status: <span class="status on">On</span></p>
+                <p>Usage: 0.8 kWh</p>
+                <button class="toggle-btn">Turn Off</button>
+            </div>
+            <div class="device-card">
+                <div class="device-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Microwave</h3>
+                <p>Status: <span class="status off">Off</span></p>
+                <p>Usage: 0.0 kWh</p>
+                <button class="toggle-btn off">Turn On</button>
+            </div>
+            <div class="device-card">
+                <div class="device-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>WiFi Router</h3>
+                <p>Status: <span class="status on">On</span></p>
+                <p>Usage: 0.3 kWh</p>
+                <button class="toggle-btn">Turn Off</button>
+            </div>
+        </section>
+
+        <section class="add-device">
+            <button class="cta-button">
+                <i class="fas fa-plus"></i> Add New Device
+            </button>
+        </section>
+    </main>
+</body>
+</html>

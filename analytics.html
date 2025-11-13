@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Smart Home Energy Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <i class="fas fa-home"></i>
+            <h1>Smart Home Energy Optimization</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="devices.html"><i class="fas fa-plug"></i> Devices</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header">
+            <h2>Energy Analytics</h2>
+            <p>Detailed insights into your energy consumption patterns</p>
+        </section>
+
+        <section class="analytics-grid">
+            <div class="analytics-card">
+                <div class="section-header">
+                    <i class="fas fa-calendar-week"></i>
+                    <h3>Weekly Consumption</h3>
+                </div>
+                <canvas id="weeklyChart"></canvas>
+            </div>
+            <div class="analytics-card">
+                <div class="section-header">
+                    <i class="fas fa-clock"></i>
+                    <h3>Peak Usage Hours</h3>
+                </div>
+                <canvas id="peakHoursChart"></canvas>
+            </div>
+            <div class="analytics-card">
+                <div class="section-header">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Cost Analysis</h3>
+                </div>
+                <div class="cost-breakdown">
+                    <div class="cost-item">
+                        <span>Electricity Bill</span>
+                        <span>$145.20</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>Potential Savings</span>
+                        <span>$32.50</span>
+                    </div>
+                    <div class="cost-item total">
+                        <span>Monthly Total</span>
+                        <span>$112.70</span>
+                    </div>
+                </div>
+            </div>
+            <div class="analytics-card">
+                <div class="section-header">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Environmental Impact</h3>
+                </div>
+                <div class="impact-stats">
+                    <div class="impact-item">
+                        <span>CO2 Saved</span>
+                        <span>45.2 kg</span>
+                    </div>
+                    <div class="impact-item">
+                        <span>Trees Equivalent</span>
+                        <span>2.3 trees</span>
+                    </div>
+                    <div class="impact-item">
+                        <span>Energy Efficiency</span>
+                        <span>78%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="insights">
+            <h3>Key Insights</h3>
+            <div class="insights-list">
+                <div class="insight-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Your peak usage is between 6-8 PM. Consider shifting some activities to off-peak hours.</p>
+                </div>
+                <div class="insight-item">
+                    <i class="fas fa-chart-line"></i>
+                    <p>AC usage has increased by 15% this week. Check thermostat settings.</p>
+                </div>
+                <div class="insight-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <p>You've saved $25 this month compared to last month. Great job!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/analytics.js"></script>
+</body>
+</html>

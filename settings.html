@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Smart Home Energy Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <i class="fas fa-home"></i>
+            <h1>Smart Home Energy Optimization</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="devices.html"><i class="fas fa-plug"></i> Devices</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-header">
+            <h2>Settings</h2>
+            <p>Customize your smart home energy dashboard</p>
+        </section>
+
+        <section class="settings-grid">
+            <div class="settings-card">
+                <div class="section-header">
+                    <i class="fas fa-user"></i>
+                    <h3>Profile Settings</h3>
+                </div>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" value="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="timezone">Timezone</label>
+                        <select id="timezone">
+                            <option>UTC-8 (PST)</option>
+                            <option>UTC-5 (EST)</option>
+                            <option>UTC+0 (GMT)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="cta-button">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="settings-card">
+                <div class="section-header">
+                    <i class="fas fa-bell"></i>
+                    <h3>Notifications</h3>
+                </div>
+                <form class="settings-form">
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="email-notifications" checked>
+                        <label for="email-notifications">Email notifications</label>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="push-notifications" checked>
+                        <label for="push-notifications">Push notifications</label>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="usage-alerts">
+                        <label for="usage-alerts">High usage alerts</label>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="weekly-reports" checked>
+                        <label for="weekly-reports">Weekly reports</label>
+                    </div>
+                    <button type="submit" class="cta-button">Update Preferences</button>
+                </form>
+            </div>
+
+            <div class="settings-card">
+                <div class="section-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Privacy & Security</h3>
+                </div>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label for="current-password">Current Password</label>
+                        <input type="password" id="current-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm New Password</label>
+                        <input type="password" id="confirm-password">
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="two-factor">
+                        <label for="two-factor">Enable two-factor authentication</label>
+                    </div>
+                    <button type="submit" class="cta-button">Update Security</button>
+                </form>
+            </div>
+
+            <div class="settings-card">
+                <div class="section-header">
+                    <i class="fas fa-palette"></i>
+                    <h3>Appearance</h3>
+                </div>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label for="theme">Theme</label>
+                        <select id="theme">
+                            <option>Light</option>
+                            <option selected>Dark</option>
+                            <option>Auto</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <select id="language">
+                            <option selected>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="animations" checked>
+                        <label for="animations">Enable animations</label>
+                    </div>
+                    <button type="submit" class="cta-button">Apply Changes</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="danger-zone">
+            <div class="settings-card danger">
+                <div class="section-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Danger Zone</h3>
+                </div>
+                <p>These actions cannot be undone. Please be certain.</p>
+                <button class="danger-button">
+                    <i class="fas fa-trash"></i> Delete All Data
+                </button>
+                <button class="danger-button">
+                    <i class="fas fa-sign-out-alt"></i> Sign Out Everywhere
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

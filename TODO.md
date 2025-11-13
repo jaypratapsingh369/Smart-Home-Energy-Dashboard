@@ -1,0 +1,5 @@
+- [ ] Create package.json with Node.js dependencies (express, cors)
+- [ ] Create server.js with Express server setup, static file serving, and API endpoints for devices, energy, notifications, suggestions
+- [ ] Update js/script.js to fetch data from API endpoints instead of using mock data
+- [ ] Install dependencies using npm install
+- [ ] Test the server and frontend integration
